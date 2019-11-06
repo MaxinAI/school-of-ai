@@ -1,3 +1,3 @@
 # school-of-ai
 
-Notebooks for the school of AI with the lecture notes
+Notebooks for the school of AI with the lecture notes and assignments
