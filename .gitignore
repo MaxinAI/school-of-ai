@@ -6,3 +6,5 @@
 *.local.ipynb
 
 .DS_Store
+
+install/
