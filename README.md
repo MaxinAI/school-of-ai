@@ -59,4 +59,3 @@ Intermediate level
 
 ## General instructions:
 - By cloning the repo, you will have the notebooks needed during the course. All these notebooks can be run using [Google Colab](https://colab.research.google.com/) (Ready to go)
-- To have a working environment for the code install the packages from the `requirements.txt`. (If conda or pip doesn't install packages directly you have to install them one by one).
