@@ -50,7 +50,7 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
 # Course Outcome
 After successful completion of this course, students will have good understanding of fundamental Machine Learning algorithms and will be able to solve intermediate level real world problems on their own.
 
-# Difficulty:
+# Difficulty
 Intermediate level
 
 # General instructions
