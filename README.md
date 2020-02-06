@@ -24,10 +24,10 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
 7. [Machine Learning Intro](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_7_machine_learning_intro.ipynb)
 
 8. **Workshop 1**
-  - [car price prediction (exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_car_price_prediction(exercise).ipynb)
-  - [car price prediction (complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_car_price_prediction(complete).ipynb)
-  - [heart disease prediction (exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_heart_disease_prediction(exercise).ipynb)
-  - [heart disease prediction (complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_heart_disease_prediction(complete).ipynb)
+    - [car price prediction (exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_car_price_prediction(exercise).ipynb)
+    - [car price prediction (complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_car_price_prediction(complete).ipynb)
+    - [heart disease prediction (exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_heart_disease_prediction(exercise).ipynb)
+    - [heart disease prediction (complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_1_heart_disease_prediction(complete).ipynb)
   
 9. [Regularization in Machine Learning](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_8_machine_learning_regularization.ipynb)
 
@@ -38,14 +38,14 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
 12. [Trees and Ensembles](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_11_trees_and_ensembles.ipynb)
 
 13. **Workshop 2**
-  - [Sloan Digital Sky Survey Classification (Exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_2_sdss_classification(exercise).ipynb)
-  - [Sloan Digital Sky Survey Classification (Complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_2_sdss_classification(complete).ipynb)
+    - [Sloan Digital Sky Survey Classification (Exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_2_sdss_classification(exercise).ipynb)
+    - [Sloan Digital Sky Survey Classification (Complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_2_sdss_classification(complete).ipynb)
   
 14. [Deep Neural Networks](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_12_dnn.ipynb)
 
 15. **Workshop 3**
-  - [DNN implementation (Exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation.ipynb)
-  - [DNN implementation (Complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation_complete.ipynb)
+    - [DNN implementation (Exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation.ipynb)
+    - [DNN implementation (Complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation_complete.ipynb)
 
 
 # Course Summary:
