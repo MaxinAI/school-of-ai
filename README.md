@@ -1,5 +1,5 @@
 # school of AI
-Introductory course in AI with lecture notebooks and hands-on workshop materials.
+Introductory course in Machine Learning with lecture notebooks and hands-on workshop materials.
 
 # Authors:
 Levan Tsinadze - https://www.linkedin.com/in/levan-tsinadze-246a1b2a/
@@ -47,12 +47,8 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
     - [DNN implementation (Exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation.ipynb)
     - [DNN implementation (Complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation_complete.ipynb)
 
-
-# Course Summary:
-
-
 # Course Outcome
-
+After successful completion of this course, students will have good understanding of fundamental Machine Learning algorithms and will be able to solve intermediate level real world problems on their own.
 
 # Difficulty:
 Intermediate level
