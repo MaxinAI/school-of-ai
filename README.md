@@ -1,7 +1,7 @@
 # school of AI
 Introductory course in Machine Learning with lecture notebooks and hands-on workshop materials.
 
-# Authors:
+# Authors
 Levan Tsinadze - https://www.linkedin.com/in/levan-tsinadze-246a1b2a/
 
 Anzor Gozalishvili - https://www.linkedin.com/in/anzor-gozalishvili
@@ -53,5 +53,5 @@ After successful completion of this course, students will have good understandin
 # Difficulty:
 Intermediate level
 
-## General instructions:
+# General instructions
 - By cloning the repo, you will have the notebooks needed during the course. All these notebooks can be run using [Google Colab](https://colab.research.google.com/) (Ready to go)
