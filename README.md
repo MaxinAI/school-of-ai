@@ -47,6 +47,8 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
     - [DNN implementation (Exercise)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation.ipynb)
     - [DNN implementation (Complete)](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_3_dnn_implementation_complete.ipynb)
 
+16. [unsupervised machine learning](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_13_unsupervised_ml.ipynb)
+
 # Course Outcome
 After successful completion of this course, students will have good understanding of fundamental Machine Learning algorithms and will be able to solve intermediate level real world problems on their own.
 
