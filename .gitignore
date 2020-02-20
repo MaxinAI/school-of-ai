@@ -8,3 +8,5 @@
 /data/mnist/
 /data/mnist_fastai/
 /data/mnist_tensors/
+/data/weights.pkl
+/models
