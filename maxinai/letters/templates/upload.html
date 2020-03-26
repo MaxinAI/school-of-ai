@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Recognition</title>
+    <style>
+body {
+	border: 0;
+	padding: 0;
+	margin: 20px 0px;
+	background-color: #f0f0f0;
+}
+
+
+    </style>
+</head>
+<body>
+<table style="width: 80%; margin: auto;">
+    <forms id="file-uploader-form" action="/files" method="post"
+           enctype="multipart/form-data">
+        <tr>
+            <td style="text-align: right; width: 100px;">Image File:</td>
+            <td><input type="file" name="image-rec" id="input-file"
+                       style="width: 100%"/></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; width: 100px; padding: 10px;">
+                <button type="submit" id="recognize-button">Recognize</button>
+            </td>
+            <td></td>
+        </tr>
+    </forms>
+    <tr>
+        <td colspan="2" style="vertical-align: top;">
+            <div id="result-div" style="margin-left: 30px;"></div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="vertical-align: top; text-align: center;">
+            <div id="preview-div"></div>
+        </td>
+    </tr>
+
+</table>
+<script type="text/javascript">
+        (function() {
+            var geo_labels = {'1': 'ა', '2': 'ბ', '3': 'გ', '4': 'დ', '5': 'ე', '6': 'ვ', '7': 'ზ', '8': 'თ', 
+                    '9': 'ი', '10': 'კ', '11': 'ლ', '12': 'მ', '13': 'ნ', '14': 'ო', '15': 'პ', '16':'ჟ',
+                    '17': 'რ', '18': 'ს', '19': 'ტ', '20': 'უ', '21': 'ფ', '22': 'ქ', '23': 'ღ', '24':'ყ',
+                    '25': 'შ', '26': 'ჩ', '27': 'ც', '28': 'ძ', '29': 'წ', '30': 'ჭ', '31': 'ხ', '32':'ჯ', 
+                    '33': 'ჰ'}
+            var size = 28
+            var width = Math.floor(Math.min(innerHeight, innerWidth)/(size + 2))
+            var resultDiv = document.getElementById("result-div")
+            resultDiv.style.height = size * width + 'px'
+            resultDiv.style.fontSize = size * width + 'px'
+            var form = document.getElementById('file-uploader-form');
+            var button = document.getElementById('recognize-button')
+            var input = document.getElementById('input-file')
+            button.addEventListener('click', function() {
+                fileUploader()
+            })
+            //             input.addEventListener('keyup', function(e) {
+            //                 if (e.keyCode == 13) {
+            //                     recognizeImage()
+            //                 }
+            //             })
+            var previewDiv = document.getElementById('preview-div')
+
+            function recognizeImage(formData) {
+
+                resultDiv.innerHTML = '<h1>Loading ... </h1>'
+
+                var xhr = new XMLHttpRequest()
+                xhr.open('POST', '/upload', true)
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var result = xhr.responseText
+                        var responseJson = JSON.parse(result)
+                        if(responseJson.error){
+                            resultDiv.innerHTML = response.error
+                        }else if(responseJson.geoletters){
+                            resultDiv.innerHTML = geo_labels[responseJson.prediction]
+                        }else{
+                            if (isFinite(parseInt(responseJson.prediction))) {
+                                resultDiv.innerHTML = parseInt(responseJson.prediction)
+                            } else {
+                                resultDiv.innerHTML = '?'
+                            }
+                        }
+                    } else {
+                        resultDiv.innerHTML = '<h1>Could not recognize image</h1>'
+                    }
+                }
+                xhr.send(formData)
+            }
+
+            var fileUploader = function() {
+                
+                previewDiv.innerHTML = ''
+
+                var files = input.files
+                var formData = new FormData()
+                for (var i = 0; i < files.length; i++) {
+                    var file = files[i];
+
+                    // Check the file type.
+                    if (!file.type.match('image.*')) {
+                        continue;
+                    }
+
+                    var img = new Image()
+                    img.onload = function() {
+                        img.width = Math.min(img.width, 800)
+                        previewDiv.appendChild(img)
+                    }
+                    img.onerror = function() {
+                        previewDiv.innerHTML = '<h1>Could not load image</h1>'
+                    }
+                    img.src = URL.createObjectURL(file)
+
+                    // Add the file to the request.
+                    formData.append('image-rec', file, file.name);
+                }
+                recognizeImage(formData)
+            }
+
+            form.onsubmit = function(event) {
+
+                event.preventDefault()
+                fileUploader()
+            }
+        })()
+
+
+</script>
+</body>
