@@ -4,5 +4,9 @@
 **.ipynb_checkpoints/
 **.pyc
 *.local.ipynb
-
 .DS_Store
+/data/mnist/
+/data/mnist_fastai/
+/data/mnist_tensors/
+/data/weights.pkl
+/models
