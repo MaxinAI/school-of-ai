@@ -45,7 +45,7 @@ def prepare_mnist(flags, **kwargs):
         datasets.MNIST(_files.data_dir, train=False, transform=_transform_func()),
         batch_size=flags.test_batch_size, shuffle=True, **kwargs)
 
-    return (train_loader, None, test_loader)
+    return train_loader, None, test_loader
 
 
 def pil_loader_gr(path):
@@ -119,9 +119,9 @@ def prepare_geoletters(flags, **kwargs):
     class_idxs = train_dataset.class_to_idx
     logger.debug('class_names - ', class_names, '\n', 'class_idxs - ', class_idxs)
     flags.num_classes = len(class_names)
-    _save_labels(flags, class_idxs, class_names)
+    _save_labels(flags, class_idxs)
 
-    return (train_loader, val_loader, test_loader)
+    return train_loader, val_loader, test_loader
 
 
 def prepare_training(flags):
@@ -145,4 +145,4 @@ def prepare_training(flags):
         logger.debug('loading MNIST data')
         (train_loader, val_loader, test_loader) = prepare_mnist(flags, **kwargs)
 
-    return (train_loader, val_loader, test_loader)
+    return train_loader, val_loader, test_loader

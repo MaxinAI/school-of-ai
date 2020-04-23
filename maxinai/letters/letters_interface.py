@@ -8,15 +8,14 @@ Network model interface for letres
 
 import numpy as np
 import torch
-from torch.autograd import Variable
 from torchvision import transforms
 from utils.files import file_utils
-from utils.logging import logger
 
 from maxinai.letters import cnn_input_reader as reader
 from maxinai.letters.dataset_utils import read_labels
 from maxinai.letters.network_model import choose_model
 from maxinai.letters.train_network import validate_test
+from utils.logging import logger
 
 # Functions for input tensor pre-processing
 transform_func = transforms.Compose([transforms.ToTensor(),
@@ -142,7 +141,7 @@ def load_labels(flags):
     class_names = {int(idx): class_name for (idx, class_name) in labels_json.iteritems()}
     logger.log(flags, class_names)
 
-    return (labels_json, class_names)
+    return labels_json, class_names
 
 
 def init_model_and_labels(flags):
@@ -160,7 +159,7 @@ def init_model_and_labels(flags):
     flags.num_classes = len(class_names) if len(class_names) > 0 else flags.num_classes
     model = init_model(flags)
 
-    return (model, labels_json, class_names)
+    return model, labels_json, class_names
 
 
 def run_on_directory(flags):

@@ -66,7 +66,7 @@ def train(epoch, training_config):
         optimizer.step()
         batch_idx += 1
         if batch_idx % flags.log_interval == 0:
-            f'Train Epoch: {epoch} [{batch_idx * len(data)}/{len(train_loader.dataset)} ({100. * batch_idx / len(train_loader):.0f}%)]\tLoss: {loss.data[0]:.6f}'
+            #f'Train Epoch: {epoch} [{batch_idx * len(data)}/{len(train_loader.dataset)} ({100. * batch_idx / len(train_loader):.0f}%)]\tLoss: {loss.data[0]:.6f}'
             print(.format(
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                        100. * batch_idx / len(train_loader), loss.data[0]))

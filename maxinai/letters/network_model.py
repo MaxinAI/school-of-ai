@@ -1,22 +1,29 @@
 """
-Created on Nov 7, 2017
+Created on Apr 23, 2020
 
 Network model for handwritten character recognition
 
 @author: Levan Tsinadze
 """
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
 
+import logging
 from collections import OrderedDict
 
+import torch
 import torch.nn.functional as F
-from flayer.flatten import Flatten
-from torch import nn
-import logging
+from torch import nn, Tensor
 
 logger = logging.getLogger(__name__)
+
+
+class Flatten(nn.Module):
+    """Flatten layer"""
+
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, x: Tensor) -> Tensor:
+        return torch.flatten(x, 1)
 
 
 class LetterNetClassic(nn.Module):
@@ -67,7 +74,7 @@ class LinearFeatures(nn.Module):
 
     def __init__(self):
         super(LinearFeatures, self).__init__()
-        self.fc_part = nn.Sequential(OrderedDict([('flatten', Flatten(1024)),
+        self.fc_part = nn.Sequential(OrderedDict([('flatten', Flatten()),
                                                   ('bn2', nn.BatchNorm1d(1024)),
                                                   ('relu3', nn.ReLU(inplace=True)),
                                                   ('drop2', nn.Dropout(p=0.25))]))
@@ -86,13 +93,14 @@ class LetterNetSlim(nn.Module):
         self.fc = nn.Linear(1024, num_classes)
 
     def get_features(self, x):
-        """Gets features vector from input
-          Args:
-            x - input tensor
-          Returns:
-            logits - result logits
         """
+        Gets features vector from input
+        Args:
+            x: input tensor
 
+        Returns:
+            logits: result logits
+        """
         x = self.conv_part(x)
         x = self.fc_part(x)
         logits = self.fc(x)
@@ -151,7 +159,7 @@ def choose_model(flags):
     """
 
     model_name = flags.model_name
-    logger.debuf('model_name - ', model_name)
+    logger.debug('model_name - ', model_name)
     if model_name == 'LetterNet':
         model = LetterNet(input_channels=flags.channels, num_classes=flags.num_classes)
     elif model_name == 'LetterNetClassic':

@@ -10,3 +10,4 @@
 /data/mnist_tensors/
 /data/weights.pkl
 /models
+/data/geomnist_dataset/
