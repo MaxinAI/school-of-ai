@@ -9,5 +9,6 @@
 /data/mnist_fastai/
 /data/mnist_tensors/
 /data/weights.pkl
+/data/models
 /models
 /data/geomnist_dataset/
