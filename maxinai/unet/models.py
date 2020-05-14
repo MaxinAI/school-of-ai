@@ -4,8 +4,11 @@ Initialize UNet models
 
 from fastai2.vision.all import *
 from fastai2.vision.models import unet, resnet34
+from detectron2.engine import DefaultPredictor
 
 imagenet_stats = ([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+
+SegmentationDataLoaders
 
 
 def _add_norm(dls, meta, pretrained):
