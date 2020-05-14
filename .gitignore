@@ -13,4 +13,6 @@
 /models
 /data/geomnist_dataset/
 /detectron2_repo/
-download
+/download
+/content
+global-wheat-detection.zip
