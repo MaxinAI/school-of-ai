@@ -1,4 +1,3 @@
-
 """
 Created on Apr 23, 2020
 
@@ -27,7 +26,17 @@ def data_path() -> Path:
     Returns:
         data path
     """
-    return Path(__file__).parent / 'data'
+    return root_path() / 'data'
+
+
+def models_path() -> Path:
+    """
+    Inirialize models path
+
+    Returns:
+        models path
+    """
+    return root_path() / 'models'
 
 
 def onnx_path() -> Path:
