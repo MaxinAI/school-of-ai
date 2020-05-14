@@ -16,3 +16,10 @@
 /download
 /content
 global-wheat-detection.zip
+**model_final_68b088.pkl*
+train.csv
+sample_submission.csv
+/output
+data/wheet
+/train
+/test
