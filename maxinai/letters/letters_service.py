@@ -9,8 +9,8 @@ Service for model interface
 import logging
 
 from fastai.vision import *
-from flask import (Flask, request, json)
-from torch import nn, Tensor
+from flask import (Flask, request, render_template, json)
+from torch import (nn, Tensor, no_grad)
 from torchvision import transforms
 
 from maxinai.letters.image_reader import request_file
@@ -45,6 +45,7 @@ class ModelWrapper(object):
         self.model = model.eval()
         self.trfms = trfms
 
+    @no_grad()
     def forward(self, *imgs: PIL.Image) -> np.ndarray:
         itns = torch.stack([self.trfms(x) for x in imgs])
         otns = self.model(itns)
@@ -80,8 +81,10 @@ def init_model():
         conv2(512, 33),
         nn.AdaptiveAvgPool2d((1, 1)),
         FlattenLayer())
-    state_dict = torch.load(str(data_path() / 'models' / 'mnist_resnet.pth'), map_location='cpu')
-    net.load_state_dict(state_dict)
+    #state_dict = torch.load(str(data_path() / 'models' / 'mnist_resnet.pth'), map_location='cpu')
+    state_dict = torch.load(str(data_path() / 'models' / 'res_stage_1.pth'), map_location='cpu')
+    weights_dict = state_dict['model']
+    net.load_state_dict(weights_dict, strict=True)
     net.eval()
 
     return net
@@ -125,7 +128,12 @@ def cnn_recognize():
       Returns:
         resp - recognition response
     """
-    return recognize_image(request.data)
+    if request.method == 'POST':
+        resp = recognize_image(request.data)
+    elif request.method == 'GET':
+        resp = render_template('index.html')
+
+    return resp
 
 
 @app.route('/upload', methods=['GET', 'POST'])
