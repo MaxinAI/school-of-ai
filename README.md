@@ -52,7 +52,12 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
 18. [Segmentation](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_18_segmentation_detection.ipynb)
 19. [Object Detection](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_19_object-detection.ipynb)
 20. [AutoEncoders&GANs](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_20_autoencoders_gans.ipynb)
+21. [Introduction to nlp](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_21_natural_language_processing_1.ipynb)
 
+22. **Workshop 7**
+    - [question_answering_using_spacy_and_nmslib](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_7_question_answering_using_spacy_and_nmslib.ipynb)
+    - [aspect_based_sentiment_analysis](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_7_aspect_based_sentiment_analysis.ipynb)
+  
 # Course Outcome
 After successful completion of this course, students will have good understanding of fundamental Machine Learning algorithms and will be able to solve intermediate level real world problems on their own.
 
