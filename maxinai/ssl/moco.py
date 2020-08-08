@@ -42,18 +42,44 @@ def shuffle_idxs_orig(bsz: int) -> tuple:
     return shfl_idxs, rest_idxs
 
 
-def set_bn_train(layer: nn.Module):
+def shuffle_keys(x_k: torch.Tensor, shufl_idxs: torch.Tensor) -> torch.Tensor:
+    """
+    Shuffle encoded keys fr batch normalization
+    Args:
+        x_k: array of encoded keys
+        shufl_idxs: shuffled indices
+
+    Returns:
+        shuffled keys
+    """
+    return x_k[shufl_idxs]
+
+
+def unshuffle_keys(keys: torch.Tensor, rest_idxs: torch.Tensor) -> torch.Tensor:
+    """
+    Restore encoded keys after batch shuffling
+    Args:
+        keys: array of encoded keys
+        rest_idxs: restored indices
+
+    Returns:
+        restored keys
+    """
+    return keys[rest_idxs]
+
+
+def set_bn_trainable(bn_layer: nn.Module):
     """
     Make batch normalization trainable
     Args:
-        layer: layer of the model
+        bn_layer: batch normalization layer of the model
     """
-    cls_name = layer.__class__.__name__
+    cls_name = bn_layer.__class__.__name__
     if 'BatchNorm' in cls_name:
-        layer.train()
+        bn_layer.train()
 
 
-def moment_update(model_q, model_k, mt: float = 0.999):
+def momentum_update(model_q, model_k, mt: float = 0.999):
     """
     Update weights of the key encoder with exponentially moving average:
     model_ema = m * model_ema + (1 - m) model
