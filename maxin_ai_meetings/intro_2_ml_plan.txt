@@ -1,0 +1,38 @@
+1) AI - Machine Learning
+2) (X, p_X) -> (Y, p_y) approximation
+3) Labels (y^1, y^2, /dots, y^m)
+4) f:X -> Y f(x^i) as close as possible to y^i
+5) error estimation C(f, Y) = aggr_{i = 1}^{m}(L(f(x^i), y^i))
+6) make error es small as possible
+	linear regression
+	classification
+7) make f generalizable on entire distribution population
+8) f has parameters f(W, x) make it static for f(W, x^1, x^2, \dots, x^m)
+   make it static for x^1, x^2, \dots x^m
+   consider new function C(W) = aggr_{i = 1}^{m}(L(f(W, x^i), y^i))
+   so we should find minumum of C by W or min_{W \in \mathmm{W}}C(W)
+9) finding minimum any suggestions?
+10) gradient descent
+11) supervised learning
+12) unsupervised learning
+	clustering
+	anomaly detection
+	etc
+13) reinforcement learning (as part of supervised learning)
+14) self-supervised learning
+	image generation (auto-encoders)
+	de-noising auto-encoders
+	rotation classifier
+	contrastive learning Word2Vec
+	contrastive learning Node2Vec
+	contrastive learning Image2Vec
+	word language model
+	character language model
+	unmask de-noising auto-encoders
+	mixed strategies
+15) representation learning
+16) regression
+17) classification
+18) clustering
+19) example localization as regression and classification
+20) questions
