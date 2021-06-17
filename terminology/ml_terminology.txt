@@ -1,0 +1,5 @@
+მიზნობრივი ცვლადები - labels
+მახასიათებლები - features
+გასხვლა - pruning
+შემთხვევითი ტყე - random forest
+გადაწყვეტილების კუნძი - decision stump
