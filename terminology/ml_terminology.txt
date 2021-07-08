@@ -3,3 +3,12 @@
 გასხვლა - pruning
 შემთხვევითი ტყე - random forest
 გადაწყვეტილების კუნძი - decision stump
+მიზნის ფუნქცია, მიზნობრივი ფუნქცია - cost / lost function
+დანარკის ფუნქცია - loss function
+შეფასების ფუნქცია - cost function
+კონტროლირებადი - supervised
+არაკონტროლირებადი - unsupervised
+თვით-კონტროლირებადი  - self-supervised
+განმტკიცებითი დასწავლა - reinforcement learning
+ცოდნის გადატანა / ტრანსფერი - transfer learning
+დახვეწა / რაფინირება - fine-tuning
