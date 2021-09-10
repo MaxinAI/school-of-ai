@@ -57,6 +57,7 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
 22. **Workshop 7**
     - [question_answering_using_spacy_and_nmslib](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_7_question_answering_using_spacy_and_nmslib.ipynb)
     - [aspect_based_sentiment_analysis](https://github.com/MaxinAI/school-of-ai/blob/master/workshop_7_aspect_based_sentiment_analysis.ipynb)
+23. [Deep Learning for NLP & Sequence Modelling](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_22_natural_language_processing_2.ipynb)
   
 # Course Outcome
 After successful completion of this course, students will have good understanding of fundamental Machine Learning algorithms and will be able to solve intermediate level real world problems on their own.
