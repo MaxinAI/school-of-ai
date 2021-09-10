@@ -51,7 +51,7 @@ Sandro Barnabishvili - https://www.linkedin.com/in/sandrobarna
 17. [Optimization Methods in Machine Learning](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_14_optimizations.ipynb)
 18. [Segmentation](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_18_segmentation_detection.ipynb)
 19. [Object Detection](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_19_object-detection.ipynb)
-20. [AutoEncoders&GANs](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_20_autoencoders_gans.ipynb)
+20. [AutoEncoders&GANs](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_20_ssl_autoencoders_gans.ipynb)
 21. [Introduction to nlp](https://github.com/MaxinAI/school-of-ai/blob/master/lecture_21_natural_language_processing_1.ipynb)
 
 22. **Workshop 7**
