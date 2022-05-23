@@ -24,3 +24,4 @@ data/wheet
 /train
 /test
 /test_wheets
+lightning_logs/
