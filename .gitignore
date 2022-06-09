@@ -12,6 +12,7 @@
 /data/models
 /data/geoletters
 /data/__MACOSX/
+data/hymenoptera*
 /models
 /data/geomnist_dataset/
 /detectron2_repo/

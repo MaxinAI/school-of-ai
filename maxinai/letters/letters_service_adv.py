@@ -50,7 +50,7 @@ class ModelWrapper(object):
 
 def init_wrapper():
     """
-    Initialize model wrapper
+    Load model from disk and initialize model wrapper
 
     Returns:
         wrapper: model wrapper
