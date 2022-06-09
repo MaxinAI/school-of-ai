@@ -43,7 +43,8 @@ def process_image_file(flags, img: PIL.Image):
     dim = flags.thumb_width, flags.thumb_height
     img = img.convert("L")  # convert into grey-scale
     img = img.point(lambda i: i < 150 and 255)  # better black and white
-    img = ImageOps.expand(img, border=flags.border, fill=_BORDER_COLOR)  # add padding
+    img = ImageOps.expand(
+        img, border=flags.border, fill=_BORDER_COLOR)  # add padding
     rimg = _resize_algorithm(img, dim)
     img.thumbnail(dim, rimg)
 

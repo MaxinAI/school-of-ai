@@ -19,7 +19,16 @@ def configure():
         flags - configuration parameters
     """
 
-    parser = argparse.ArgumentParser(description='Network models for characters recognition')
+    parser = argparse.ArgumentParser(
+      description='Network models for characters recognition')
+    parser.add_argument('--model_path', '-m',
+                        dest='model_path',
+                        type=str,
+                        help='Model path')
+    parser.add_argument('--label_path', '-l',
+                        dest='label_path',
+                        type=str,
+                        help='Label path')
     parser.add_argument('--seed',
                         dest='seed',
                         type=int,

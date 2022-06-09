@@ -10,6 +10,8 @@
 /data/mnist_tensors/
 /data/weights.pkl
 /data/models
+/data/geoletters
+/data/__MACOSX/
 /models
 /data/geomnist_dataset/
 /detectron2_repo/
