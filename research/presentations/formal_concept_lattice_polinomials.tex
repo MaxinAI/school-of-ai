@@ -96,9 +96,9 @@
 
 \begin{frame}
     \frametitle{Concept Lattice}
-    Denote set of all concepts on context $(G, M, I)$ as $\B(G, M I)$
+    Denote set of all concepts on context $(G, M, I)$ as $\B(G, M, I)$
 
-    Then it is easy to proofe that $\B(G, M I)$ is complete lattice with meet and join
+    Then it is easy to proofe that $\B(G, M, I)$ is complete lattice with meet and join
     operations:
     $$
     \bigvee_{j \in J}{(A_j, B_j)} = ((\bigcup_{j \in J}{A_j})', \bigcap_{j \in J}{B_j})
@@ -116,7 +116,7 @@
     \frametitle{Formal Concept Analysis and Decision Trees}
     If we consider objects as in our dataset and attributes as features, we can define
     analysis of machine learning model and find similarities with formal concept analysis
-    an machine learning architectures
+    and machine learning architectures
     \begin{itemize}
         \item In \cite{ClassFCA} defined several methods for classification using 
         Formal Concept Analysis
@@ -235,7 +235,7 @@
             \item[1] For each $B^{l} \in \B^{l}$ there exists $B^{l + 1} \in \B^{l + 1}$
             such that $B^{l + 1} \subset B^{l}$
             \item[2] For each $B^{l} \in \B^{l} $ we have 
-            $\bigcup_{b^{l + 1} \subset B^{l}}{B^{l + 1}} = B^{l}$
+            $\bigcup_{B^{l + 1} \subset B^{l}}{B^{l + 1}} = B^{l}$
         \end{description}
 
         We can distinguish layer of the lattice polinomial:
