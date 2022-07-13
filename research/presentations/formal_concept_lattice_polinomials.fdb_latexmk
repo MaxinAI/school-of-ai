@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1657607579 "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.tex" "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.pdf" "formal_concept_lattice_polinomials" 1657607877
+["pdflatex"] 1657607579 "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.tex" "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.pdf" "formal_concept_lattice_polinomials" 1657742766
   "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.aux" 1657607581 8178 9dd51b074491ab88fee739ba57956f30 ""
-  "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.tex" 1657607874 19703 ff34f669fe36d302ee80592bf13ce476 ""
+  "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.tex" 1657742764 19703 ff34f669fe36d302ee80592bf13ce476 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -213,7 +213,7 @@
   "formal_concept_lattice_polinomials.aux" 1657607581 8178 9dd51b074491ab88fee739ba57956f30 ""
   "formal_concept_lattice_polinomials.nav" 1657607581 2411 1672b5f42ecc4dd10ebcb1091e6a0fa6 ""
   "formal_concept_lattice_polinomials.out" 1657607580 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "formal_concept_lattice_polinomials.tex" 1657607874 19703 ff34f669fe36d302ee80592bf13ce476 ""
+  "formal_concept_lattice_polinomials.tex" 1657742764 19703 ff34f669fe36d302ee80592bf13ce476 ""
   "images/concept_1.png" 1657585384 121663 a01a246968afa56bd1eaeae1bb1d29ac ""
   "images/cpwl_approx_1.jpg" 1657593963 19147 a3e337ea1ad14edcde34ee3f10765a57 ""
   "images/cross_table_2.png" 1657586329 26604 db53d2dd99626885a123bd0e63812a4e ""
@@ -225,12 +225,12 @@
   "images/sig_approx_1.jpeg" 1657594094 20660 37522bc515fa5f11b20e04d78388a5a0 ""
   "images/step_approx_1.png" 1657593816 2951 d1e916fa8344be2acefb873573da4cb1 ""
   (generated)
-  "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.log"
+  "formal_concept_lattice_polinomials.pdf"
+  "formal_concept_lattice_polinomials.snm"
+  "formal_concept_lattice_polinomials.out"
   "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.pdf"
   "formal_concept_lattice_polinomials.aux"
-  "formal_concept_lattice_polinomials.out"
-  "formal_concept_lattice_polinomials.log"
-  "formal_concept_lattice_polinomials.snm"
-  "formal_concept_lattice_polinomials.nav"
+  "/Users/levan/git/school-of-ai/research/presentations/formal_concept_lattice_polinomials.log"
   "formal_concept_lattice_polinomials.toc"
-  "formal_concept_lattice_polinomials.pdf"
+  "formal_concept_lattice_polinomials.log"
+  "formal_concept_lattice_polinomials.nav"
