@@ -5,5 +5,5 @@ numpy
 scipy
 pandas
 openpyxl
-pygam
+#pygam
 scikit-learn
