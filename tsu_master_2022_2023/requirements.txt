@@ -9,3 +9,4 @@ openpyxl
 scikit-learn
 xgboost
 graphviz
+scikit-image
