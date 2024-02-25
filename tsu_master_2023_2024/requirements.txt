@@ -10,3 +10,5 @@ scikit-learn
 xgboost
 graphviz
 scikit-image
+tqdm
+opencv-python
