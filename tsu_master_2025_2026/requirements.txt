@@ -12,3 +12,6 @@ graphviz
 scikit-image
 tqdm
 opencv-python
+torch
+torchvision
+torchaudio
