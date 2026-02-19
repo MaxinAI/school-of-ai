@@ -12,7 +12,8 @@ import logging
 def set_level(verbose: bool):
     """
     Sets logging level
+
     Args:
-        verbose: logging flag
+        verbose (bool): logging flag
     """
     logging.basicConfig(level='DEBUG' if verbose else 'INFO')

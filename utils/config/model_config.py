@@ -25,7 +25,7 @@ def init_device(conf: Namespace) -> str:
     """
     Initialize device to bind model abd data
     Args:
-        conf: configuration parameters
+        conf (Namespace): configuration parameters
 
     Returns:
         device name
@@ -40,11 +40,11 @@ def script_model(model: nn.Module, sizes: list) -> ScriptModule:
     """
     Generates converts model to the cript model
     Args:
-        model: model to convert
-        sizes: sizes of input
+        model (nn.Module): model to convert
+        sizes (list): sizes of input
 
     Returns:
-        graph_model: converted model
+        graph_model (ScriptModule): converted model
     """
     xs = tuple(torch.randn(1, 3, s, s, requires_grad=False) for s in sizes)
     graph_model = trace(model.eval(), xs)

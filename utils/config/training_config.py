@@ -12,9 +12,10 @@ import torch
 def set_main_device(on_gpu: bool, device_id: int):
     """
     Sets main device
+
     Args:
-        on_gpu: flag to train on GPU device
-        device_id: device identifier
+        on_gpu (bool): flag to train on GPU device
+        device_id (int): device identifier
     """
     if on_gpu:
         torch.cuda.set_device(device_id)
