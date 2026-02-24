@@ -21,7 +21,7 @@ CPU = _CPU_DEVICE
 MPS = _MPS_DEVICE
 
 
-def init_device(conf: Namespace) -> str:
+def init_device(conf: Namespace) -> torch.device:
     """
     Initialize device to bind model abd data
     Args:
@@ -30,9 +30,11 @@ def init_device(conf: Namespace) -> str:
     Returns:
         device name
     """
-    return GPU if conf.gpu and torch.cuda.is_available() else MPS if (
-        conf.mps and torch.backends.mps.is_available()
-    ) else CPU
+    return torch.device(
+        GPU if conf.gpu and torch.cuda.is_available() else MPS if (
+            conf.mps and torch.backends.mps.is_available()
+        ) else CPU
+    )
 
 
 @torch.no_grad()
