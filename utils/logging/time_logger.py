@@ -37,8 +37,13 @@ class TimerWrapper(object):
         """
         if self.verbose:
             time_taken = time.clock() - self.start
-            print_texts(self.verbose, 'Time taken for ',
-                        self.func, ' is - ', time_taken)
+            print_texts(
+                self.verbose,
+                'Time taken for ',
+                self.func,
+                ' is - ',
+                time_taken
+            )
         else:
             time_taken = None
 
