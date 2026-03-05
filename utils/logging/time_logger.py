@@ -28,7 +28,7 @@ class TimerWrapper(object):
         if self.verbose:
             self.start = time.clock()
 
-    def timeit(self):
+    def timeit(self) -> float:
         """
         Logs timed data
 
