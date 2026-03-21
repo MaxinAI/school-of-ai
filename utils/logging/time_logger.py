@@ -17,7 +17,13 @@ logger = logging.getLogger(__name__)
 
 
 class TimerWrapper(object):
-    """Timer wrapper object"""
+    """Timer wrapper object
+
+    Attributes:
+        verbose (bool): logging flag
+        func (str): function name
+        start (float): start time
+    """
 
     def __init__(self, verbose: bool = False, func: str = None):
         super().__init__()
@@ -91,6 +97,6 @@ def start_timer(verbose: bool = False, func: object = None) -> TimerWrapper:
         func (object): function name
 
     Returns:
-        initialized timer instance
+        TimerWrapper: initialized timer instance
     """
     return TimerWrapper(verbose, func=func)
