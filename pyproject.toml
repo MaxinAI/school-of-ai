@@ -14,6 +14,7 @@ dependencies = [
     "opencv-python>=4.11.0.86",
     "openpyxl>=3.1.5",
     "pandas>=2.3.3",
+    "peft>=0.19.1",
     "scikit-image>=0.26.0",
     "scikit-learn>=1.8.0",
     "scipy>=1.16.3",
@@ -26,6 +27,6 @@ dependencies = [
     "torchaudio>=2.9.1",
     "torchvision>=0.24.1",
     "tqdm>=4.67.1",
-    "transformers>=5.1.0",
+    "transformers==5.5.3",
     "xgboost>=3.1.2",
 ]

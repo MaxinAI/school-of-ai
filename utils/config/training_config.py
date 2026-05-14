@@ -11,7 +11,7 @@ import torch
 
 def set_main_device(on_gpu: bool, device_id: int):
     """
-    Sets main device
+    Sets main device by on_gpu and device_id flags
 
     Args:
         on_gpu (bool): flag to train on GPU device
